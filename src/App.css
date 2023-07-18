@@ -1,38 +1,49 @@
+body {
+  margin: 0; /* Reset default margin */
+  display: flex; /* Use flexbox to center the content */
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  min-height: 100vh; /* Set minimum height to ensure the content fills the viewport */
+ 
+}
+
 .App {
-  text-align: center;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(209, 73, 73);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Apply styles to the button with the .btn class */
+.btn {
+  border-radius: 25px; /* Adjust the border-radius value to round the button */
+  padding: 12px 20px; /* Increase padding on the top/bottom (12px) and left/right (20px) */
+  background-color: #ffffff; /* Set a background color (you can use your preferred color here) */
+  color: rgb(0, 0, 0); /* Set the text color to white (you can adjust this based on your design) */
+  font-size: 16px; /* Set the font size (adjust as needed) */
+  cursor: pointer; /* Show a pointer cursor on hover to indicate it's clickable */
+  border: none; /* Remove the default button border */
+  outline: none; /* Remove the default button outline on focus */
+  margin-right: 10px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Apply a hover effect to the button when the user hovers over it */
+.btn:hover {
+  background-color: #45a049; /* Change the background color on hover (you can adjust this color too) */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.counter-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 50%;
+  margin: auto;
+}
+
+.count-text {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin-bottom: 20px; /* Add some margin below the count text */
 }
